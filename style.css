@@ -28,6 +28,7 @@ body {
 /* background: color image repeat position/size */
 
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 body * {
@@ -36,7 +37,8 @@ body * {
 }
 
 #container {
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
    margin: auto;
 margin-top: 56px;
 padding: 0 24px;
@@ -44,6 +46,9 @@ padding: 0 24px;
 /* margin : top right bottom left*/
 
 }
+
+
+
 
 /* profile*/
 #profile{
@@ -170,3 +175,14 @@ footer{
     font-size: 14px;
 }
 
+/* media queries */
+ 
+@media(min-width: 700px)
+{
+    :root{
+        --bg-url: url(./Imagens/bg-desktop.jpg);
+    }
+    .light {
+        --bg-url: url(./Imagens/bg-desktop-light.jpg);
+    }
+}
